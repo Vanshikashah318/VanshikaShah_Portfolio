@@ -4,52 +4,41 @@ import { FaExternalLinkAlt, FaChevronDown } from 'react-icons/fa';
 
 const courses = {
   "Fall 2024":[
-    ["CMSC422: Intro. to Machine Learning","https://planetterp.com/course/CMSC422"],
-    ["CMSC472: Intro. to Deep Learning","https://planetterp.com/course/CMSC472"],
-    ["MATH401: Applications of Linear Algebra","https://planetterp.com/course/MATH401"],
-    ["MATH424: Intro. to the Mathematics of Finance","https://planetterp.com/course/MATH424"]
+    ["CMSC416: Parellel Programming"],
+    ["CMSC430: Compilers"],
+    ["BMGT431: Data Science:Logistic Regression"],
+    ["CMSC389P: Mastering the PM Interview", "https://planetterp.com/course/CMSC389P"]
   ]
   ,"Spring 2024": [
-    ["CMSC424: Database Design", "https://planetterp.com/course/CMSC424"],
-    ["CMSC434: Human Computer Interaction", "https://planetterp.com/course/CMSC434"],
-    ["CMSC388J: Python and Flask Web Dev.", "https://aspear.cs.umd.edu/388j"],
-    ["CMSC320: Intro. to Data Science", "https://cmsc320.github.io/"],
-    ["DATA110: App. of R for Data Science", "https://planetterp.com/course/DATA110"],
-    ["DATA120: Python Prog. for Data Science", "https://planetterp.com/course/DATA120"],
+    ["CMSC414: Networks and Security", "https://planetterp.com/course/CMSC424"],
+    ["CMSC420: Data Structures", "https://planetterp.com/course/CMSC434"],
+    ["BMGT430: Data Science: Linear Regression", "https://planetterp.com/course/DATA110"]
   ],
   "Fall 2023": [
-    ["CMSC451: Design and Analysis of Computer Algorithms", "https://planetterp.com/course/CMSC451"],
-    ["CMSC421: Intro. to Artificial Intelligence", "https://planetterp.com/course/CMSC421"],
-    ["CMSC335: Web App. Dev. with JavaScript", "https://planetterp.com/course/CMSC335"],
-    ["CMSC389T: Intro. to Git, Github and Project Management", "https://planetterp.com/course/CMSC89T"],
-    ["CMSC389P: Mastering the PM Interview", "https://planetterp.com/course/CMSC389P"],
+    ["CMSC433: Design and Analysis of Computer Algorithms", "https://planetterp.com/course/CMSC451"],
+    ["CMSC320: Intro. to Artificial Intelligence", "https://planetterp.com/course/CMSC421"],
+    ["CMSC389T: Intro. to Git, Github and Project Management", "https://planetterp.com/course/CMSC89T"]
+    
   ],
   "Spring 2023": [
     ["CMSC351: Algorithms", "https://planetterp.com/course/CMSC351"],
     ["CMSC330: Org. of Prog. Languages", "https://planetterp.com/course/CMSC330"],
     ["CMSC389O: The Coding Interview", "https://planetterp.com/course/CMSC389O"],
-    ["MATH206: Intro. To MATLAB", "https://planetterp.com/course/MATH206"],
     ["MATH241: Calculus III", "https://planetterp.com/course/MATH241"],
   ],
   "Fall 2022": [
     ["CMSC216: Intro. to Computer Systems", "https://planetterp.com/course/CMSC216"],
     ["CMSC250: Discrete Structures", "https://planetterp.com/course/CMSC250"],
     ["MATH240: Intro. to Linear Algebra", "https://planetterp.com/course/MATH240"],
-    ["FIRE298: FIRE Semester 3", "https://www.fire.umd.edu/about"],
-  ],
-  "Summer 2022": [
-    ["STAT400: App. Probability & Statistics I", "https://planetterp.com/course/STAT400"],
   ],
   "Spring 2022": [
     ["CMSC132: Object-Oriented Prog. II", "https://planetterp.com/course/CMSC132"],
-    ["MATH141: Calculus II", "https://example.com/math141"],
-    ["FIRE198: FIRE Semester 2", "https://www.fire.umd.edu/about"],
+    ["MATH141: Calculus II", "https://example.com/math141"]
   ],
   "Fall 2021": [
     ["CMSC131: Object-Oriented Prog. I", "https://planetterp.com/course/CMSC131"],
-    ["MATH140: Calculus I", "https://planetterp.com/course/MATH140"],
-    ["FIRE120: FIRE Semester 1", "https://www.fire.umd.edu/about"],
-  ],
+    ["MATH140: Calculus I", "https://planetterp.com/course/MATH140"]
+  ]
 };
 
 const RelevantCoursework = () => {
@@ -61,13 +50,13 @@ const RelevantCoursework = () => {
   };
 
   return (
-    <section className="bg-black text-white py-12" id='coursework'>
+    <section className="bg-gray text-white py-12" id='coursework'>
       <div className="container mx-auto px-6 lg:px-8">
-        <h2 className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-yellow-500 mb-12 font-extrabold">Relevant Coursework</h2>
+        <h2 className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-600 to-purple-300 mb-12 font-extrabold">Relevant Coursework</h2>
         <div className="relative mb-8">
           <button
             onClick={toggleDropdown}
-            className="block w-full py-2 px-4 text-left bg-transparent border border-white font-semibold text-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 lg:hidden flex justify-between items-center"
+            className="block w-full py-2 px-4 text-left bg-transparent border border-white font-bold text-white rounded-md focus:outline-none focus:ring-3 focus:ring-offset-2 focus:ring-blue-500 lg:hidden flex justify-between items-center"
           >
             {selectedSemester}
             <FaChevronDown className="ml-2" />
@@ -81,7 +70,7 @@ const RelevantCoursework = () => {
                       setSelectedSemester(semester);
                       setIsDropdownOpen(false);
                     }}
-                    className="block w-full py-2 px-4 text-left text-white hover:bg-gray-700 focus:outline-white focus:bg-gray-700"
+                    className="block w-full py-2 px-4 text-left text-white hover:bg-gray-700 focus:outline-white focus:bg-gray-500"
                   >
                     {semester}
                   </button>
@@ -94,7 +83,7 @@ const RelevantCoursework = () => {
               <button
                 key={semester}
                 onClick={() => setSelectedSemester(semester)}
-                className={`py-2 px-4 whitespace-nowrap ${selectedSemester === semester ? "text-red-500 border-b-2 font-semibold border-red-500" : "text-white font-semibold hover:text-white transition"}`}
+                className={`py-2 px-4 whitespace-nowrap ${selectedSemester === semester ? "text-green-500 border-b-2 font-semibold border-green-500" : "text-white font-semibold hover:text-white transition"}`}
               >
                 {semester}
               </button>
@@ -112,7 +101,7 @@ const RelevantCoursework = () => {
             >
               <span className="absolute inset-0 flex items-center justify-center w-full h-full text-black duration-300 -translate-x-full bg-white group-hover:translate-x-0 ease">
                 <FaExternalLinkAlt className="mr-2" />
-                {course}
+                {course} 
               </span>
               <span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">
                 <FaExternalLinkAlt className="mr-2" />

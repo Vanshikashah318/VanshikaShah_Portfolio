@@ -5,43 +5,34 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = [
   {
-    name: 'PlanetTerp Data & Sentiment Exploration',
-    image: '/images/sentiment.jpg',
+    name: 'Shell Junior',
+    image: '/images/shelljr.png',
     description: 'An exploration project where my group and I used machine learning to analyze the PlanetTerp dataset, featuring 26,000 entries. We leveraged Python tools like NumPy and nltk to engineer features and perform sentiment analysis, developing a model that predicts student GPAs with 73% accuracy by considering course levels and sentiment scores from reviews.',
-    githubLink: 'https://github.com/ShreenidhiAyinala/Planetterp-Course-Review-Data-Exploration-NLP-Methods',
-    skills: ['Python', 'NLP', 'Machine Learning', 'Pandas'],
-    liveDemo: 'https://shreenidhiayinala.github.io/'
+    skills: ['C','Linux'],
+    
   },
   {
-    name: 'Higher or Lower Game',
-    image: '/images/game.jpg',
-    description: 'A game where players guess which video game has more downloads. Choose your level of difficulty with caution!',
-    githubLink: 'https://github.com/tomurdi/higherorlower',
-    skills: ['Python', 'Flask', 'Tailwind CSS'],
-    liveDemo: 'https://higherorlowergame.vercel.app/'
+    name: 'Image Classification',
+    image: '/images/CNN.jpg',
+    description: 'Developed and trained a CNN model using Keras and TensorFlow to classify images across diverse object categories, such as frogs, cats, dogs, automobiles, and shoes, showcasing proficiency in deep learning techniques.Utilized the Adam optimizer to improve the model\'s performance, achieving high accuracy in object recognition and categorization across multiple categories.',
+    githubLink: 'https://github.com/Vanshikashah318/ImageClassification_CNN',
+    skills: ['Python', 'Tensorflow', 'Numpy'],
+
   },
   {
-    name: 'Kitchen Craft',
-    image: '/images/food.jpg',
-    description: 'An interactive mobile web app based on HCI principles for healthy meal suggestions, recipe ingredient tracking, and collaborative meal planning.',
-    githubLink: 'https://github.com/Vasu1415/Kitchen-Craft',
-    skills: ['JavaScript', 'HTML CSS']
-  },
-  {
-    name: 'Movie Review Database System',
-    image: '/images/movie.jpg',
-    description: 'A web-based movie review platform where users can securely create accounts, add personal reviews, and engage with community feedback on various films.',
-    githubLink: 'https://github.com/Vasu1415/Movie-Database-Review-System',
-    skills: ['Python', 'Flask', 'HTML CSS', 'MongoDB'],
+    name: 'Spending Suggestor',
+    image: '/images/Spend.jpeg',
+    description: 'This project analyzes your transaction histories from CSV files to extract valuable spending insights. By integrating OpenAI’s API, it delivers personalized financial recommendations, helping users make more informed decisions. The backend is designed with a serverless architecture using AWS Lambda for smooth operation, while AWS S3 ensures secure and efficient file storage and retrieval, making the entire process seamless and optimized for cloud-based environments.',
+    skills: ['AWS Lambda', 'AWS S3','Python','OpenAI API']
   },
 ]
 
 const Projects = () => {
   return (
-    <div className="container mx-auto p-4 bg-black" id='projects'>
-      <h2 className="text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-yellow-500 mb-4 font-extrabold">Projects</h2>
+    <div className="container mx-auto p-4 bg-gray" id='projects'>
+      <h2 className="text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-500 to-blue-500 mb-4 font-extrabold">Projects</h2>
       <p className="text-base font-semibold lg:text-lg text-gray-300 mb-8">
-        Here are some of the projects I&apos;ve worked on. I hope you find them as interesting and engaging as I did!      
+        Here are some of the projects I have worked on.    
      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
@@ -55,7 +46,7 @@ const Projects = () => {
                 className="w-full h-48 object-cover" 
               />
               <div className="p-6">
-                <h2 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-yellow-500 mb-4 font-extrabold">{project.name}</h2>
+                <h2 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mb-4 font-extrabold">{project.name}</h2>
                 <p className="text-gray-300 mb-4 font-semibold">{project.description}</p>
                 <div className="mb-4">
                   {project.skills.map((skill, skillIndex) => (
@@ -70,7 +61,7 @@ const Projects = () => {
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110">
                     <FaGithub size={24} />
                   </a>
-                  {project.liveDemo && (
+                  {/* {project.liveDemo && (
                     <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-black transition duration-300 ease-out border-2 border-gray-900 rounded-full shadow-md group">
                       <span className="absolute inset-0 flex items-center justify-center w-full h-full text-black duration-300 -translate-x-full bg-white group-hover:translate-x-0 ease">
                         <FaExternalLinkAlt className="mr-2" />
@@ -82,7 +73,7 @@ const Projects = () => {
                       </span>
                       <span className="relative invisible font-extrabold">Live Demo</span>
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

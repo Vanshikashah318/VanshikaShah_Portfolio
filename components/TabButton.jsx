@@ -2,7 +2,7 @@ import React from 'react';
 
 const TabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active
-    ? 'text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-yellow-500 border-b border-red-500 font-semibold'
+    ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-300 to-purple-400 border-b border-red-500 font-semibold'
     : 'text-transparent text-white font-semibold';
   
   return (

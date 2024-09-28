@@ -4,70 +4,48 @@ import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt } from 'react-icons/fa
 
 const experiences = [
   {
-    title: 'Frontend Engineer @Playdo.AI',
-    date: 'Sep 2024 - Present',
+    title: 'Software Developer and Analyst @AiVantage',
+    date: 'June 2024 - Present',
     description: [
-      'Designed and developed an interactive code editor interface using Tailwind CSS, CodeMirror, and JavaScript, enabling problem-solving and chatbot features with customizable themes, improving user experience.',
+      'Automated personalized email campaigns with Python, enhancing targeting and personalization using LDA and KMeans for data segmentation.',
+      'Improved processing efficiency with the Knee library and refined personalization through OpenAI API prompt engineering.',
+      'Trained an LSTM and RNN model on 30,000+ inputs for product testing, achieving 89% accuracy in sentiment analysis and reducing manual analysis time by 60%.'
     ],
     links: [],
   },
   {
-    title: 'Undergraduate Research Assistant @University of Maryland, College Park',
-    date: 'Aug 2024 - Present',
-    description: [
-      'Designing and developing a dynamic crowd simulation testing environment using ReactJS and Tailwind CSS, engineered to evaluate and optimize agent behaviors in complex scenarios.',
-    ],
-    links: [],
-  },
-  {
-    title: 'Software Design Engineer Intern @Newgen Software Technologies',
+    title: 'Software Engineer Intern @LeoTechnosoft',
     date: 'May 2024 - Aug 2024',
     description: [
-      'Engineered a data extraction pipeline to analyze document data and automatically generate JSON outputs, enhancing accuracy and speed.',
-      'Leveraged OpenCV and PaddleClas Python libraries to deskew and correct image orientations with 90% accuracy.',
-      'Developed a query class prediction regression model with 70% accuracy and used NLP techniques to validate AI system queries.',
-      'Designed post-processing scripts that increased model-extracted data accuracy from 30% to 75%.',
+      'Improved database efficiency and quality by developing MySQL queries to eliminate spam bot data.',
+      'Streamlined data categorization with optimized MySQL queries, significantly reducing processing time.'
     ],
     links: [],
   },
   {
-    title: 'Undergraduate Research Assistant @Shahoveisi Lab, University of Maryland, College Park',
-    date: 'May 2024 - Aug 2024',
+    title: 'Undergraduate Research Assistant @MIND Lab, University of Maryland, College Park',
+    date: 'September 2024 - Present',
     description: [
       'Developing a custom YOLOV8 Object Detection Model for accurate classification of plant diseases.',
       'Conducted stepwise regression analysis, achieving 82% accuracy in plant disease prediction.',
     ],
     links: [],
   },
+
   {
-    title: 'Web Developer @RAM CLUB, University Of Maryland, College Park',
-    date: 'Apr 2024 - May 2024',
+    title: 'CMSC330 @University Of Maryland, College Park',
+    date: 'Jan 2023 - Present',
     description: [
-      'Collaborated with a team to redesign the UMD Robotics Club website for the ROBOSUB competition, ensuring cross-platform compatibility.',
-    ],
-    links: [],
-  },
-  {
-    title: 'Teaching Assistant CMSC250 & CMSC330 @University Of Maryland, College Park',
-    date: 'Jan 2023 - May 2024',
-    description: [
-      'Enhanced learning for over 900 students through office hours, review sessions, and weekly discussions.',
-      'Implemented project testing frameworks and autograders using Bash and Docker, reducing manual testing time.',
-    ],
-    links: [
-      { url: 'https://planetterp.com/professor/mittal_vasu', name: 'TA Reviews' },
+      'Enhanced learning for over 900 students through office hours, significantly impactingstudent engagement and improving course completion rates. ',
+      'Developed and designed multiple projects and course materials in Python, OCaml, and Rust, while also providing support in grading exams and quizzes.',
     ],
   },
   {
-    title: 'Undergraduate Student Researcher (FIRE program) @University Of Maryland, College Park',
+    title: 'Undergraduate Compuuter Science Tutor, Iribe Initiative for Diversity and Inclusion',
     date: 'Jan 2022 - Dec 2022',
     description: [
-      'Researched Quantum Error Correction (QEC) Algorithms in the Quantum ML cluster, optimizing quantum circuits.',
-      'Suggested functionality improvements for the FIREWORKS event collision display at CERN.',
-    ],
-    links: [
-      { url: 'https://www.linkedin.com/in/vasu-mittal-482287213/details/experience/1635554633347/single-media-viewer/?profileId=ACoAADX3weIBc-ivYf1dOG-aDbHTf7pCJLDT7qY', name: 'Quantum Error Correction Research' },
-      { url: 'https://www.linkedin.com/in/vasu-mittal-482287213/details/experience/1635554631480/single-media-viewer/?profileId=ACoAADX3weIBc-ivYf1dOG-aDbHTf7pCJLDT7qY', name: 'Fireworks Event Display Research' }
+      'Delivered tutoring to students in Java, C, and Assembly language, helping them grasp concepts through clear explanations and practical problem-solving, leading to a substantial improvement in their academic success.',
+      'Facilitated group study sessions with a small cohort of students, promoting collaborative learning and enhancing comprehension of course materials.',
     ],
   },
 ];
@@ -90,8 +68,8 @@ const ExperienceCarousel = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-black" id="experience">
-      <h2 className="text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-yellow-500 mb-4 font-extrabold">
+    <div className="container mx-auto p-4 bg-gray" id="experience">
+      <h2 className="text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mb-4 font-extrabold">
         Experience
       </h2>
       <div className="relative overflow-hidden">
@@ -116,7 +94,7 @@ const ExperienceCarousel = () => {
                 <div className="flex-shrink-0 w-full lg:w-1/3 mx-auto">
                   <div className="border border-gray-700 shadow-lg rounded-lg overflow-hidden transition-transform transform">
                     <div className="p-6">
-                      <h3 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-yellow-500 font-extrabold mb-4">
+                      <h3 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-purple-400 font-extrabold mb-4">
                         {experience.title}
                       </h3>
                       <p className="text-gray-400 font-semibold mb-2">
@@ -171,16 +149,20 @@ const ExperienceCarousel = () => {
 
       {/* Dots Indicators */}
       <div className="flex justify-center mt-4">
-        {experiences.map((_, idx) => (
-          <span
-            key={idx}
-            onClick={() => setCurrentIndex(idx)}
-            className={`cursor-pointer h-3 w-3 rounded-full mx-2 transition-all duration-500 ease-in-out ${
-              currentIndex === idx ? 'bg-yellow-500' : 'bg-gray-600'
-            }`}
-          />
-        ))}
-      </div>
+  {experiences.map((_, idx) => (
+    <svg
+      key={idx}
+      onClick={() => setCurrentIndex(idx)}
+      className={`cursor-pointer h-6 w-6 mx-2 transition-all duration-500 ease-in-out ${
+        currentIndex === idx ? 'fill-purple-300' : 'fill-gray-600'
+      }`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.849 1.4-8.175L.132 9.21l8.2-1.192z" />
+    </svg>
+  ))}
+</div>
     </div>
   );
 };

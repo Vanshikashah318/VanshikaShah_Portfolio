@@ -3,14 +3,17 @@ import Image from "next/image";
 
 const languagesAndTechnologies = [
   { src: "/logos/java.svg", description: "Java"},
+  { src: "/logos/python.svg", description: "Python"},
+  { src: "/logos/images.svg", description: "Ruby"},
+  { src: "/logos/download.svg", description: "Racket"},
   { src: "/logos/OCaml.svg", description: "Ocaml" },
   { src: "/logos/c.svg", description:"C"},
   { src: "/logos/javascript.svg", description: "JavaScript"},
   { src: "/logos/html.svg", description: "HTML" },
   { src: "/logos/css.svg", description: "CSS" },
-  { src: "/logos/python.svg", description: "Python"},
+  
   { src: "/logos/flask.svg", description: "Flask"},
-  { src: "/logos/tailwind-css.svg", description: "Tailwind CSS" },
+
   { src: "/logos/react.svg", description: "React" },
   { src: "/logos/mysql.svg", description: "MySQL"},
   { src: "/logos/mongodb.svg", description: "MongoDB"}
@@ -26,7 +29,7 @@ const LanguagesAndTechnologies = () => {
           </div>
           {tech.description && (
             <div className="mt-2 text-center">
-              <h2 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500 font-extrabold uppercase">
+              <h2 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 font-extrabold uppercase">
                 {tech.description}
               </h2>
             </div>

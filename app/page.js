@@ -6,7 +6,7 @@ import Experience from "../components/Experience";
 import RelevantCoursework from "../components/RelevantCoursework";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col font-sans-serif bg-black">
+    <main className="flex min-h-screen flex-col font-sans-serif bg-gray-800">
       <NavBar />
       <div className="container mt-28 mx-auto px-12 py-4">  
         <HeroSection />
