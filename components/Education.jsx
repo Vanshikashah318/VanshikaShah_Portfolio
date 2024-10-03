@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const education = [
   ["University of Maryland, College Park (2021 - 2025)", "/images/umd.png", "https://umd.edu/"], 
-  ["St Mary's School, Pune", "/images/dps.jpg", "https://www.dpsvasantkunj.com/"]
+  ["St Mary's School, Pune", "/images/smslogo.jpeg", "https://www.smspune.com/"]
 ];
 
 const Education = () => {
