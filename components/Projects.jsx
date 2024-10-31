@@ -20,6 +20,14 @@ const projects = [
 
   },
   {
+    name: 'Collaborative Document Editor',
+    image: '/images/Collab.png',
+    description: 'Created an interactive collaborative document editor enabling multiple users to edit documents simultaneously in real-time. Leveraging a robust backend built with Node.js, Express, Socket.IO, and MongoDB, I implemented Yjs for CRDT-based conflict resolution, ensuring smooth updates and an intuitive user experience.',
+    githubLink: 'https://github.com/Vanshikashah318/Collaborative-Document-editor-',
+    skills: ['Javascript', 'NodeJS', 'React','MongoDB'],
+
+  },
+  {
     name: 'Spending Suggestor',
     image: '/images/Spend.jpeg',
     description: 'This project analyzes your transaction histories from CSV files to extract valuable spending insights. By integrating OpenAI’s API, it delivers personalized financial recommendations, helping users make more informed decisions. The backend is designed with a serverless architecture using AWS Lambda for smooth operation, while AWS S3 ensures secure and efficient file storage and retrieval, making the entire process seamless and optimized for cloud-based environments.',

@@ -27,7 +27,7 @@ const HeroSection = () => {
                     I am a passionate developer and student, always eager to learn and expand my skill set. Driven by a desire to tackle real-world challenges, I strive to create innovative and effective solutions through my expertise.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a href="https://drive.google.com/file/d/1ZOGVBRJTOS6bK8G2q382U6OKPV0RUE3X/view" target="_blank" className="relative inline-flex items-center justify-center p-4 px-6 py-3 font-medium text-black transition duration-300 ease-out border-2 border-gray-900 rounded-full group">
+                <a href="https://drive.google.com/file/d/1se2Yvhl6mKWOTA1TBmgxdmpCHRxvCeJ7/view?usp=sharing" target="_blank" className="relative inline-flex items-center justify-center p-4 px-6 py-3 font-medium text-black transition duration-300 ease-out border-2 border-gray-900 rounded-full group">
     <span className="relative text-white group-hover:text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 transition duration-300 ease-out">
         Resume
     </span>

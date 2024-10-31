@@ -26,12 +26,21 @@ const experiences = [
     title: 'Undergraduate Research Assistant @MIND Lab, University of Maryland, College Park',
     date: 'September 2024 - Present',
     description: [
-      'Developing a custom YOLOV8 Object Detection Model for accurate classification of plant diseases.',
-      'Conducted stepwise regression analysis, achieving 82% accuracy in plant disease prediction.',
+      'Conducted research in breathing analytics under faculty supervision, analyzing patterns in data collected from wearable breathing devices to derive insights on physiological and health indicators, contributing to advancements in preventative health monitoring and personalized healthcare solutions.',
+  
+    ],
+    links: ["https://mindlab.cs.umd.edu/breathing-analysis"],
+  },
+  {
+    title: 'Software Developer @Umee',
+    date: 'October 2024 - Present',
+    description: [
+      'Creating a newsfeed for users to post, view, and comment, with media (photos/videos) securely stored in S3 and linked through DynamoDB for smooth, scalable access.',
+      'Building an interactive commenting system using AWS, integrating GraphQL and AppSync to link and retrieve comments by post ID, ensuring secure storage and efficient fetching for a responsive user experience on the newsfeed.'
+  
     ],
     links: [],
   },
-
   {
     title: 'CMSC330 @University Of Maryland, College Park',
     date: 'Jan 2023 - Present',
